@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export const ApiPlayground: React.FC = () => {
-  const [endpoint, setEndpoint] = useState<'/graphql' | '/open-api/'>('/graphql');
+export const ApiPlayground = () => {
+  const [endpoint, setEndpoint] = useState<'/graphql' | '/open-api/'>(
+    '/graphql',
+  );
 
   return (
     <div
